@@ -1,0 +1,31 @@
+2024-12-09 16:03:14,712 - INFO - Tests started
+2024-12-09 16:03:14,721 - INFO - Feature 'API Testing' started
+2024-12-09 16:03:14,721 - INFO - Scenario 'Validate number of results for authors search -- @1.1 ' started
+2024-12-09 16:03:14,721 - INFO - The request is: https://openlibrary.org/search/authors.json?q=Stephen+King
+2024-12-09 16:03:18,752 - INFO - Scenario 'Validate number of results for authors search -- @1.1 ' finished
+2024-12-09 16:03:18,762 - INFO - Scenario 'Validate number of results for authors search -- @1.2 ' started
+2024-12-09 16:03:18,762 - INFO - The request is: https://openlibrary.org/search/authors.json?q=J+K+Rowling
+2024-12-09 16:03:19,712 - INFO - Scenario 'Validate number of results for authors search -- @1.2 ' finished
+2024-12-09 16:03:19,712 - INFO - Scenario 'Validate first result for book title search -- @1.1 ' started
+2024-12-09 16:03:19,712 - INFO - The request is: https://openlibrary.org/search.json?q=Harry+Potter&fields=title
+2024-12-09 16:03:20,922 - INFO - Scenario 'Validate first result for book title search -- @1.1 ' finished
+2024-12-09 16:03:20,922 - INFO - Scenario 'Validate first result for book title search -- @1.2 ' started
+2024-12-09 16:03:20,922 - INFO - The request is: https://openlibrary.org/search.json?q=War+and+peace&fields=title
+2024-12-09 16:03:22,982 - INFO - Scenario 'Validate first result for book title search -- @1.2 ' finished
+2024-12-09 16:03:22,982 - INFO - Feature 'API Testing' finished
+2024-12-09 16:03:22,982 - INFO - Feature 'UI Testing' started
+2024-12-09 16:03:22,982 - INFO - Scenario 'Verify user login through the main page' started
+2024-12-09 16:03:36,937 - INFO - Scenario 'Verify user login through the main page' finished
+2024-12-09 16:03:41,017 - INFO - Scenario 'Search computers by different prices ranges -- @1.1 ' started
+2024-12-09 16:03:54,952 - INFO - Scenario 'Search computers by different prices ranges -- @1.1 ' finished
+2024-12-09 16:03:59,007 - INFO - Scenario 'Search computers by different prices ranges -- @1.2 ' started
+2024-12-09 16:04:10,542 - INFO - Scenario 'Search computers by different prices ranges -- @1.2 ' finished
+2024-12-09 16:04:14,592 - INFO - Scenario 'Add default computer to cart -- @1.1 ' started
+2024-12-09 16:04:28,855 - INFO - Scenario 'Add default computer to cart -- @1.1 ' finished
+2024-12-09 16:04:32,916 - INFO - Scenario 'Add default computer to cart -- @1.2 ' started
+2024-12-09 16:04:43,029 - ERROR - There is no success notification bar
+2024-12-09 16:04:45,538 - INFO - Scenario 'Add default computer to cart -- @1.2 ' finished
+2024-12-09 16:04:49,622 - INFO - Scenario 'Checkout process with logged in user - all default options' started
+2024-12-09 16:05:10,158 - INFO - Scenario 'Checkout process with logged in user - all default options' finished
+2024-12-09 16:05:14,216 - INFO - Feature 'UI Testing' finished
+2024-12-09 16:05:14,216 - INFO - Tests finished
