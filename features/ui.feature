@@ -1,6 +1,7 @@
 @ui
 Feature: UI Testing
 
+    #TC-UI-001
   Scenario: Verify user login through the main page
     Given I open the main page
     When I click "Log in" link in the header
@@ -8,14 +9,17 @@ Feature: UI Testing
     And I click "Log in" button
     Then I should be logged in successfully
 
+    #TC-UI-002
   Scenario Outline: Search computers by different prices ranges
     Given I open the main page
-    When I enter "computer" in the search panel
+    When I enter "comput" in the search panel
     And I click "Search" button on the main page
-    Then There should be 4 products displayed on the search page
+    Then There should be 6 products displayed on the search page
     When I open "Advanced Search"
     When I select "Computers >> Desktops" from the "Category" dropdown
-    And I set the "Price range" to From <price_from> to <price_to>
+    And I click "Search" button on the search page
+    Then There should be 4 products displayed on the search page
+    When I set the "Price range" to From <price_from> to <price_to>
     And I click "Search" button on the search page
     Then There should be <number> products displayed on the search page
     And The first product in the search should have the title "<first_title>"
@@ -24,6 +28,7 @@ Feature: UI Testing
       | 800        | 1500     | 3      | Build your own cheap computer |
       | 1000       | 1500     | 1      | Build your own computer       |
 
+    #TC-UI-003
   Scenario Outline: Add default computer to cart
     Given I open the main page
     When I navigate to the "Computers" category from the top menu
@@ -37,6 +42,7 @@ Feature: UI Testing
       | Build your own cheap computer |
       | Build your own computer       |
 
+    #TC-UI-004
   Scenario: Checkout process with logged in user - all default options
     Given I open the main page
     When I click "Log in" link in the header
