@@ -30,6 +30,7 @@ def before_scenario(context, scenario):
     context.logger.info(f"Scenario '{scenario.name}' started")
     context.driver = None
     if 'ui' in context.feature.tags:
+        # here you can change browser for testing
         context.driver = webdriver.Chrome()
         context.base_url = "https://demowebshop.tricentis.com/"
 
